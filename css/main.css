@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.0 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -408,6 +408,12 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
 
 *, ::before, ::after {
@@ -981,9 +987,23 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+.hover\:mx-4:hover {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.hover\:rounded-full:hover {
+  border-radius: 9999px;
+}
+
 .hover\:bg-brightRedLight:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brightRed:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-300:hover {
@@ -991,9 +1011,19 @@ body {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.hover\:px-4:hover {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .hover\:text-darkGrayishBlue:hover {
   --tw-text-opacity: 1;
   color: hsl(227 12% 61% / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-brightRed:hover {
